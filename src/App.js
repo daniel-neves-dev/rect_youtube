@@ -7,10 +7,12 @@ import NewProject from "./components/pages/NewProject";
 function App() {
   return (
     <Router>
-        <ul>
-            <li>Home</li>
-            <li>Contato</li>
-        </ul>
+        <div>
+            <Link to="/">Home</Link>
+            <Link to="/contact">Contato</Link>
+            <Link to="/company">Empresa</Link>
+            <Link to="/newproject">Novo Projeto</Link>
+        </div>
         <Routes>
             <Route extct path="/" element={<Home/>}/>
             <Route path="/company" element={<Company/>}/>
